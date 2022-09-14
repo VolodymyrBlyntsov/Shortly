@@ -10,17 +10,37 @@ const Header = () => {
 
           <nav>
             <ul>
-              <li><button>Features</button></li>
-              <li><button>Pricing</button></li>
-              <li><button>Resources</button></li>
+              <li>
+                <button>
+                  Features
+                </button>
+              </li>
+              <li>
+                <button>
+                  Pricing
+                </button>
+              </li>
+              <li>
+                <button>
+                  Resources
+                </button>
+              </li>
             </ul>
           </nav>
 
         </div>
 
         <ul>
-          <li><button>Login</button></li>
-          <li><button className='btn-auth'>Sign Up</button></li>
+          <li>
+            <button>
+              Login
+            </button>
+          </li>
+          <li>
+            <button className='btn-cta rounded-full'>
+              Sign Up
+            </button>
+          </li>
         </ul>
         
       </header>
