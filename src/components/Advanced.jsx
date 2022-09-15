@@ -6,14 +6,15 @@ import fully from '../images/icon-fully-customizable.svg'
 const Advanced = () => {
   return (
     <>
-        <section className="bg-white py-10 lg:py-20 mb-10">
+        <section className="bg-white py-10 lg:pt-20 mb-40">
           <div className="max-width">
             <h2 className="text-4xl font-bold text-slate-800 mb-3 text-center">Advanced Statistics</h2>
             <p className="text-slate-400 text-center mb-10 lg:mb-20"> Track how your links are performing across the web <br /> with our advanced statistics dashboard.</p>
 
-            <div className="card grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <div className="relative card grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+              <div className="line"></div>
 
-              <article className="bg-slate-100 p-5 rounded-lg">
+              <article className="bg-slate-100 p-5 rounded-lg mb-8 relative">
                 <img src={brand} alt="brand" className="p-4 -mt-14 bg-slate-100 rounded-full" />
                 <h3 className="text-slate-800 text-lg mt-5 mb-2 font-bold">Brand Recognition</h3>
                 <p className="text-slate-400 text-sm">
@@ -21,7 +22,7 @@ const Advanced = () => {
                 </p>
               </article>
 
-              <article className="bg-slate-100 p-5 rounded">
+              <article className="bg-slate-100 p-5 rounded mb-8 relative">
                 <img src={detailed} alt="detailed" className="p-4 -mt-14 bg-slate-100 rounded-full" />
                 <h3 className="text-slate-800 text-lg mt-5 mb-2 font-bold">Detailed Records</h3>
                 <p className="text-slate-400 text-sm">
@@ -29,7 +30,7 @@ const Advanced = () => {
                 </p>
               </article>
 
-              <article className="bg-slate-100 p-5 rounded">
+              <article className="bg-slate-100 p-5 rounded mb-8 relative">
                 <img src={fully} alt="fully" className="p-4 -mt-14 bg-slate-100 rounded-full" />
                 <h3 className="text-slate-800 text-lg mt-5 mb-2 font-bold">Fully Customizable</h3>
                 <p className="text-slate-400 text-sm">
