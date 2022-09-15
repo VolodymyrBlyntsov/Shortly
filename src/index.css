@@ -62,3 +62,6 @@ p {
   }
 }
 
+.leading-tight {
+  line-height: 1.2 !important;
+}

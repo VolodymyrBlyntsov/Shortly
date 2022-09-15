@@ -7,7 +7,7 @@ const Showcase = () => {
         <section className="py-10 lg:py-20">
             <div className="max-width grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-10 md:place-items-center">
                 <article className="text-center md:text-left">
-                    <h1 className="text-5xl lg:text-6xl mb-5 font-bold text-slate-800 leading-tight"> 
+                    <h1 className="text-5xl lg:text-6xl mb-5 font-bold text-slate-800 leading-tight !important"> 
                         More than just shorter links 
                     </h1>
                     <p className="lg:text-lg text-slate-400 mb-10">
@@ -17,7 +17,7 @@ const Showcase = () => {
                 </article>
 
                 <article>
-                    <img src={showcase} alt="" className="object-cover w-150 h-96" />
+                    <img src={showcase} alt="" className="object-cover w-150 h-94" />
                 </article>
             </div>
         </section>
