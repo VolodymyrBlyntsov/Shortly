@@ -6,9 +6,9 @@ import fully from '../images/icon-fully-customizable.svg'
 const Advanced = () => {
   return (
     <>
-        <section className="bg-white py-10 lg:pt-20 lg:mb-32 md:pt-20 mb-10">
+        <section className="bg-white pt-32 pb-10 lg:pb-40">
           <div className="max-width">
-            <h2 className="text-4xl font-bold text-slate-800 mb-3 text-center">Advanced Statistics</h2>
+            <h2 className="text-4xl pt-10 font-bold text-slate-800 mb-3 text-center">Advanced Statistics</h2>
             <p className="text-slate-400 text-center mb-10 lg:mb-20"> Track how your links are performing across the web <br /> with our advanced statistics dashboard.</p>
 
             <div className="relative card grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
