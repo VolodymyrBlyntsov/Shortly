@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import bgDesktop from '../images/bg-shorten-desktop.svg'
 import bgMobile from '../images/bg-shorten-mobile.svg'
 
 const Shortener = () => {
     const [text, setText] = useState("")
     const [links, setLinks] = useState([])
+    const [buttonText, setButtonText] = useState("Copy")
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -22,6 +23,11 @@ const Shortener = () => {
         }
     }
 
+    const handleCopy = () => {
+        navigator.clipboard.writeText(links.short_link3)
+        setButtonText("Copied!")
+    }
+
     return (
         <>
             <section className="max-width shortener relative">
@@ -37,7 +43,7 @@ const Shortener = () => {
                     </div>
                 </form>
 
-                <div className="flex flex-col items-center justify-center bg-slate-100 rounded-lg text-center md:flex-row md:justify-between p-3 mt-3">
+                <div className="flex flex-col items-center justify-center md:bg-slate-100 bg-white rounded-lg text-center md:flex-row md:justify-between p-3 mt-3">
                     <article className="mb-3 md:mb-0">
                         <h6>{links.original_link}</h6>
                     </article>
@@ -48,7 +54,7 @@ const Shortener = () => {
                                 <button className="text-[#314ee7]">{links.short_link3}</button>
                             </li>
                             <li>
-                                <button className='btn-cta rounded-lg text-sm'>Copy</button>
+                                <button onClick={handleCopy} className="btn-cta rounded-lg text-sm focus:bg-[#314ee7]">{buttonText}</button>
                             </li>
                         </ul>
                     </article>
