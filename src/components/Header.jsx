@@ -74,7 +74,7 @@ const Header = () => {
           <div className="hidden md:block">
             <ul className="flex items-center ml-5">
               <li className="my-5 md:my-0 md:mr-5">
-                <button className="text-[#314ee7]">Login</button>
+                <button className="text-black">Login</button>
               </li>
               <li>
                 <button className="btn-cta rounded-full">Sign Up</button>

@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply focus:outline-none focus:ring focus:ring-violet-300 rounded;
+}
+
 img {
   max-width: 100%;
 }
@@ -64,4 +68,23 @@ p {
 
 .leading-tight {
   line-height: 1.2 !important;
+}
+
+.shortener {
+  height: 17.188rem;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+
+.shortener img {
+  height: 17.188rem;
+  @apply w-full rounded-lg;
+}
+
+.shortener .form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;   
 }
