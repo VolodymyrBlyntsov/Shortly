@@ -17,7 +17,7 @@ const Showcase = () => {
                 </article>
 
                 <article>
-                    <img src={showcase} alt="" className="object-cover w-150 h-94" />
+                    <img src={showcase} alt="" className="object-cover w-full h-full" />
                 </article>
             </div>
         </section>

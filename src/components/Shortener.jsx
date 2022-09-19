@@ -44,7 +44,7 @@ const Shortener = () => {
     return (
         <>
             <section className="max-width shortener relative">
-                <picture>
+            <picture>
                     <source media="(min-width:768px)" srcSet={bgDesktop} />
                     <img src={bgMobile} alt="mobile-background-shortener" />
                 </picture>
@@ -66,7 +66,7 @@ const Shortener = () => {
                                 <button className="text-[#314ee7]">{links.short_link3}</button>
                             </li>
                             <li>
-                                <button onClick={handleCopy} className="btn-cta rounded-lg text-sm focus:bg-[#314ee7]">{buttonText}</button>
+                                <button onClick={handleCopy} className="btn-cta-shortener rounded-lg text-sm focus:bg-[#314ee7]">{buttonText}</button>
                             </li>
                         </ul>
                     </article>

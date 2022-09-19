@@ -16,7 +16,7 @@ const Header = () => {
             <nav className="hidden md:block md:ml-5">
                   <ul className="flex items-start justify-start">
                     <li>
-                      <button className="text-[#314ee7]">
+                      <button className="md:mx-1 text-[#314ee7]">
                         Features
                       </button>
                     </li>
@@ -26,7 +26,7 @@ const Header = () => {
                       </button>
                     </li>
                     <li>
-                      <button className="text-[#314ee7]">
+                      <button className="md:mx-1 text-[#314ee7]">
                         Resources
                       </button>
                     </li>
